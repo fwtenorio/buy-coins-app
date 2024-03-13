@@ -65,7 +65,7 @@ export default {
         } else {
           url = 'sign-up'
         }
-        const response = await fetch(`http://localhost:8000/api/${url}`, {
+        const response = await fetch(`https://bitsharktoken.com/backend/public/api/${url}`, {
           method: 'POST',
           headers: {
             'Content-type': 'application/json'

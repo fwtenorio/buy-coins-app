@@ -42,7 +42,7 @@ export default {
     // Requisição POST para criar um novo usuário
     async fetchTransactions() {
       try {
-        const response = await fetch('http://localhost:8000/api/transactions', {
+        const response = await fetch('https://bitsharktoken.com/backend/public/api/transactions', {
           method: 'GET',
           headers: {
             'Authorization': this.token

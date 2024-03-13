@@ -70,7 +70,7 @@
       // Requisição POST para criar um novo usuário
       async fetchListCoin() {
         try {
-          const response = await fetch('http://localhost:8000/api/coins', {
+          const response = await fetch('https://bitsharktoken.com/backend/public/api/coins', {
             method: 'GET',
             headers: {
               'Authorization': this.token
@@ -90,7 +90,7 @@
         try {
           if (this.inputAmount !== '') {
             this.btnBuyLabel = 'CARREGANDO...';
-            const response = await fetch('http://localhost:8000/api/coins/price-rate', {
+            const response = await fetch('https://bitsharktoken.com/backend/public/api/coins/price-rate', {
               method: 'POST',
               headers: {
                 'Content-type': 'application/json',
@@ -123,7 +123,7 @@
         try {
           this.btnBuyLabel = 'AGUARDE...';
           this.btnBuyActive = false;
-          const response = await fetch('http://localhost:8000/api/transactions', {
+          const response = await fetch('https://bitsharktoken.com/backend/public/api/transactions', {
             method: 'POST',
             headers: {
               'Content-type': 'application/json',
